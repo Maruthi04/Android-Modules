@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Activities.Activities.LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENttetr your number :"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:background="@drawable/editextbgm"
+        android:hint="Enter the number"
+        android:id="@+id/edit"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Increment"
+        android:id="@+id/b11"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_purple"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrement"
+        android:id="@+id/b22"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_purple"/>
+
+</LinearLayout>

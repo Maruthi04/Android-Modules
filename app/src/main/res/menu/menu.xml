@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item  android:title="login"
+    android:id="@+id/toast"/>
+    <item android:title="creative corner"
+        android:id="@+id/destroy"
+        />
+    <item android:title="Send error report"
+        android:id="@+id/errors"
+        />
+
+</menu>

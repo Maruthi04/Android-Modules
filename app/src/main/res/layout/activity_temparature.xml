@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="69dp"
+        android:text="hiii"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/label_proximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="bye"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/label_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+
+        android:layout_marginTop="142dp"
+        android:textColor="#D32E2E"
+        android:text="babai" />
+
+
+</RelativeLayout>
+
+

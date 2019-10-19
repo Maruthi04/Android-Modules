@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SharedPreferencess">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:hint="enter the name"
+        android:id="@+id/nameof"/>
+
+    <EditText
+        android:layout_width="match_parent"
+android:inputType="number"
+        android:hint="enter the number"
+        android:layout_height="wrap_content"
+        android:id="@+id/no1"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="save"
+    android:onClick="savee"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Number"
+        android:id="@+id/text11"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Saved Name"
+        android:layout_height="wrap_content"
+        android:id="@+id/text22"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:onClick="gett"/>
+
+</LinearLayout>

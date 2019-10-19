@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Permission: Writing to SDCard -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permission: Writing to SDCard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Errors"></activity>
+        <!-- <activity android:name=".srinivaslist"></activity> -->
+        <!-- <activity android:name=".maruthiList"></activity> -->
+        <!-- <activity android:name=".temparature"></activity> -->
+        <!-- <activity android:name=".practice" /> -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" /> <!-- <activity -->
+        <!-- android:name=".MapsActivity" -->
+        <!-- android:label="@string/title_activity_maps"></activity> -->
+        <activity android:name=".ShowALLfragments" /> <!-- <activity android:name=".HomePageB"></activity> -->
+        <activity android:name=".buttonclicking" /> <!-- <activity android:name=".HomePageB"></activity> -->
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".asynctaskChumma" /> <!-- <activity android:name=".ayncIMage"></activity> -->
+        <!-- <activity android:name=".notificationfinal"></activity> -->
+        <!-- <activity android:name=".notification"></activity> -->
+        <!-- <activity android:name=".notificationpracticeactivity"></activity> -->
+        <!-- <activity android:name=".downloadmusic_asynctask"></activity> -->
+        <!-- <activity android:name=".FragmentHolder"></activity> -->
+        <activity android:name=".Practice.phoneslist" /> <!-- <activity android:name=".Practice.componentslist"></activity> -->
+        <activity android:name=".FragmentLifecycle" />
+        <activity android:name=".SharedPreferencess" />
+        <activity android:name=".BookActivity" />
+        <activity android:name=".RegisterActivity" /> <!-- &lt;!&ndash; <activity &ndash;&gt; -->
+        <activity android:name=".LoginActivitywithsql" /> <!-- android:label="@string/title_activity_login_activitywithsql"></activity> -->
+        <activity android:name=".SQLlite" /> <!-- <activity android:name=".ContactsActivity"></activity> -->
+        <!-- <activity android:name=".BroadCastReciever"></activity> -->
+        <!-- <activity android:name=".Practice.SupportActivity"></activity> -->
+        <!-- <activity android:name=".Practice.SupportforFragmet"></activity> -->
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".BluetoothActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".ContextMenu" />
+        <activity android:name=".FRAGMENTtESTINGaCT" />
+        <activity android:name=".Practice.datarecieve" /> <!-- <activity android:name=".Practice.datatransfer" /> &lt;!&ndash; <activity android:name=".Practice.smsactivity"></activity> &ndash;&gt; -->
+        <!-- <activity android:name=".Practice.Gridview"></activity> -->
+        <!-- <activity android:name=".Practice.autocompletetextview"></activity> -->
+        <!-- <activity android:name=".Practice.girlslist"></activity> -->
+        <!-- <activity android:name=".Practice.listpractice"></activity> -->
+        <!-- <activity android:name=".Practice.customradiocheckbuttons"></activity> -->
+        <!-- <activity android:name=".Practice.PracticeActivity"></activity> -->
+        <activity android:name=".actorslist" />
+        <activity android:name=".commfrag1" />
+        <activity android:name=".contacts" />
+        <activity android:name=".Login" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".HomePageB" />
+        <activity android:name=".temparature" />
+        <activity android:name=".ContactsActivity" />
+        <activity android:name=".savedinstance" />
+        <activity android:name=".incrementActivity" /> <!-- <activity android:name="com.example.myapplication.contacts"></activity> -->
+        <activity android:name=".onCreateondestroy" /> <!-- <activity android:name=".buttonclicking" /> -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".mynotireciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

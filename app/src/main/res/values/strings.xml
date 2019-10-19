@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Android Class</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_login_activitywithsql">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="maruthi">
+        <item>"hello"</item>
+        <item>"ekkadunnav"</item>
+        <item>"emayyav"</item>
+        <item>"emchesthunnavo"</item>
+        <item>"sarle"</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="error_no_sensor">No Sensor Available on Device</string>
+    <string name="label_light">Light Sensor: %1$.2f </string>
+    <string name="label_proximity">Proximity Sensor: %1$.2f </string>
+    <string name="label_temp">Temperature Sensor: %1$.2f </string>
+
+
+</resources>

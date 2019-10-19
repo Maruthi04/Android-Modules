@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/interviewbg"
+    tools:context=".actorslist">
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/name"
+
+       android:layout_marginTop="30dp"
+       android:background="@drawable/editextbgm"
+       android:gravity="center"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+
+       android:hint="Enter the Name"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/roll"
+       android:layout_marginTop="30dp"
+       android:background="@drawable/editextbgm"
+       android:gravity="center"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+
+       android:hint="Enter the Roll Number"/>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+     android:layout_marginLeft="40dp"
+      android:orientation="horizontal">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Year:"
+         android:textSize="20sp"
+         />
+     <RadioGroup
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/okati"
+            android:onClick="onRadioButtonClicked"
+            android:layout_height="wrap_content" android:text="1st yr"/>
+        <RadioButton
+            android:id="@+id/rendu"
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="2nd yr"/>
+        <RadioButton
+            android:id="@+id/moodu"
+            android:onClick="onRadioButtonClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="3rd yr"/>
+        <RadioButton
+            android:onClick="onRadioButtonClicked"
+            android:id="@+id/nalugu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="4th yr"/>
+     </RadioGroup>
+  </LinearLayout>
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+    android:id="@+id/actorslist"></ListView>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/button_purple"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:text="REgister"
+       android:id="@+id/reg"
+       android:layout_gravity="bottom"
+       android:textColor="#fff"
+       />
+
+</LinearLayout>
